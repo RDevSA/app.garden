@@ -1,0 +1,7 @@
+Страницы с ошибками:
+ErrorDocument 404 /404-for-me.php
+
+
+Поддомен 2 уровня:
+RewriteCond %{HTTP_HOST} ^test.site.ru$ [NC]
+RewriteRule ^(.*)$ http://site.ru%{REQUEST_URI} [R=301,NC,L,QSA]
