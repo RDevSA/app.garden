@@ -2,7 +2,7 @@
 
 namespace public\Controllers;
 
-use Core\BaseController;
+use core\BaseController;
 
 class PagePublicController extends BaseController
 {
