@@ -1,0 +1,11 @@
+{
+  "autoload": {
+    "psr-4": {
+      "App\\Admin\\": "app/admin",
+      "App\\Public\\": "app/public",
+      "App\\Lk\\": "app/lk",
+      "Core\\": "core/"
+    }
+  }
+
+}

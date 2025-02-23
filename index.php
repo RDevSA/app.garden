@@ -1,13 +1,6 @@
 <?php
-
-use core\Routing\Router;
-
-spl_autoload_register(function ($class) {
-    $path =  str_replace('\\','/',$class.'.php');
-    if (file_exists($path)){
-        require_once $path;
-    }
-});
+require_once "vendor/autoload.php";
+use Core\Routing\Router;
 
 $router = new Router();
 //phpinfo();
