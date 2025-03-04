@@ -1,3 +1,4 @@
 /.idea
 Error htaccess
 vendor
+.env
