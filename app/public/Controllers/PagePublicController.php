@@ -11,4 +11,6 @@ class PagePublicController extends BaseController
         echo '<br>'."Класс: ".__CLASS__;
         echo '<br>DB_HOST = '.$_ENV['DB_HOST'];
     }
+
+
 }
