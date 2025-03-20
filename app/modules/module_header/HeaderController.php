@@ -1,9 +1,7 @@
 <?php
 
 namespace Module_Header;
-use Core\Builder\Module;
 use Core\Builder\ModuleBuilder;
-use Core\Builder\NewModuleBuilder;
 
 class HeaderController
 {
@@ -17,10 +15,11 @@ class HeaderController
     }
    */
     public static function index(){
-        $headerBuilder = new NewModuleBuilder();
+        $headerBuilder = new ModuleBuilder();
         $headerBuilder
-            ->setHtml('headerNew');
-        NewModuleBuilder::build();
+            ->setHtml('headerNew')
+            ->setCss('headerCss')
+            ->build();
     }
 
 }
