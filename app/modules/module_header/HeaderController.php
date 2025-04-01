@@ -19,6 +19,7 @@ class HeaderController
         $headerBuilder
             ->setHtml('headerNew')
             ->setCss('headerCss')
+            ->setJs('headerJS')
             ->build();
     }
 

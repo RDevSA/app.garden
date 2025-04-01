@@ -1,3 +1,4 @@
 /.idea
 Error htaccess
 .env
+.env.dev
