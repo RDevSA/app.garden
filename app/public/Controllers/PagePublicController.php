@@ -17,6 +17,7 @@ class PagePublicController extends BaseController
         echo '<br>DB_HOST = '.$_ENV['DB_HOST'];
 
         HeaderController::index();
+        Libs::twig();
         //Libs::render();
     }
 
