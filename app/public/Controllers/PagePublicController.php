@@ -7,8 +7,6 @@ use Core\libs\Twig\Twig;
 use Module_Header\HeaderController;
 use Core\BaseController;
 
-use Libs\Libs;
-
 class PagePublicController extends BaseController
 {
 

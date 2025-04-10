@@ -9,7 +9,7 @@ class HeaderController
     public static function index(){
         $headerBuilder = new ModuleBuilder();
         $headerBuilder
-            ->setHtml('headerNew')
+            ->setHtml('header')
             ->setCss('headerCss')
             ->setJs('headerJS')
             ->build();
