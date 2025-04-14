@@ -6,6 +6,7 @@ namespace App\Public\Controllers;
 use Core\libs\Twig\Twig;
 use Module_Header\HeaderController;
 use Core\BaseController;
+use Module_Menu\MenuController;
 
 class PagePublicController extends BaseController
 {
@@ -16,7 +17,9 @@ class PagePublicController extends BaseController
         echo '<br>DB_HOST = '.$_ENV['DB_HOST'];
 
         HeaderController::index();
-        Twig::init();
+        MenuController::index();
+        $twig = new Twig();
+        $twig->init();
     }
 
 

@@ -5,8 +5,8 @@ use Core\Builder\ModuleBuilder;
 
 class HeaderController
 {
-
-    public static function index(){
+    public static function index()
+    {
         $headerBuilder = new ModuleBuilder();
         $headerBuilder
             ->setHtml('header')
