@@ -2,7 +2,6 @@
 
 namespace App\Public\Controllers;
 
-
 use Core\libs\Twig\Twig;
 use Module_Header\HeaderController;
 use Core\BaseController;

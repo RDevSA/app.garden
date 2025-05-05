@@ -1,7 +1,6 @@
 <?php
 
-namespace app\lk\Controllers;
-
+namespace Lk\Controller;
 use Core\BaseController;
 
 class PageLkController extends BaseController
