@@ -10,7 +10,7 @@ class HeaderController
         $headerBuilder = new ModuleBuilder();
         $headerBuilder
             ->setHtml('header')
-            ->setCss('headerCss')
+            ->setCss('header')
             ->setJs('headerJS')
             ->build();
     }

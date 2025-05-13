@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test 456</title>
+    <title>Test 456 {% block title %} {% endblock title %}</title>
+    {#{% block head %} <link rel="stylesheet" href="main.css"> {% endblock head %}#}
+
 </head>
 <body>
 
 {{ include('@public/header.html') }}
-<h4>Twig test</h4>
+<h4>Twig test: </h4>
 {{ include('@public/menu.html') }}
 </body>
 </html>
