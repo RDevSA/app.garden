@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test 456</title>
+    <title>{% block title %}{% endblock %} - My Webpage My Title</title>
+
 
 
 </head>
 <body>
 
-{{ include('@public/header.html') }}
+{#{{ include('@public/header.html') }}#}
 <h4>Twig test: </h4>
-{{ include('@public/menu.html') }}
+{#{{ include('@public/menu.html') }}#}
 </body>
 </html>
