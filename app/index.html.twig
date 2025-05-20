@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %} - My Webpage My Title</title>
 
-
+    {% block style %}{% endblock %}
 
 </head>
 <body>
 
-{#{{ include('@public/header.html') }}#}
+{{ include('@public/header.html.twig') }}
 
 {#{{ include('@public/menu.html') }}#}
 </body>
