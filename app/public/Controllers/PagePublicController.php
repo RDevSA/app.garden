@@ -18,8 +18,8 @@ class PagePublicController extends BaseController
 
         HeaderController::index();
         MenuController::index();
-        //$twig = new Twig();
-        $twig = new v2_Twig();
+        $twig = new Twig();
+        //$twig = new v2_Twig();
         $twig->init();
     }
 
