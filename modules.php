@@ -1,8 +1,7 @@
 <?php
 
 use App\Admin\Controllers\PageAdminController;
-use App\Public\Controllers\PagePublicController;
-
+use Core\PagePublic\PagePublicController;
 use Lk\Controller\PageLkController;
 
 return [
