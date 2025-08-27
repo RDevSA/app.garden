@@ -13,5 +13,22 @@ $router = new Router(
     ['test_page', '/', [TestPagePublicController::class]],
 );
 
+try {
+    $route = $router->matchFromPath($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
+    $params = $route->getParams();
+    $args = $route->getVars();
+
+    $controllerName = $params[0];
+    $methodName = $params[1]??null;
+
+    $controller = new $controllerName();
+    if (!is_callable($controller)){
+        $controller = [$controller,$methodName];
+    }
+    echo $controller(...array_values($args));
+}catch (Exception $exception){
+    header("HTTP/1.0 404 Not Found");
+}
+
 //phpinfo();
 //test git connect
