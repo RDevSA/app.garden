@@ -2,6 +2,7 @@
 require_once "core/composer/vendor/autoload.php";
 
 use Core\Libs\DotEnv;
+use Core\Routing_v2\Route;
 use Core\Routing_v2\Router;
 use Core\TestPagePublic\TestPagePublicController;
 
@@ -9,9 +10,9 @@ use Core\TestPagePublic\TestPagePublicController;
 
 Dotenv::dotEnv();
 //$router = new Router();
-$router = new Router(
-    ['test_page', '/', [TestPagePublicController::class]],
-);
+$router = new Router([
+    new Route('test_page', '/', [TestPagePublicController::class]),
+]);
 
 try {
     $route = $router->matchFromPath($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
