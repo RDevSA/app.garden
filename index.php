@@ -10,11 +10,15 @@ use Core\TestPagePublic\TestPagePublicController;
 
 Dotenv::dotEnv();
 //$router = new Router();
+
 $router = new Router([
-    new Route('test_page', '/', [TestPagePublicController::class]),
+    new Route('test_page', '/test_page', [TestPagePublicController::class]),
 ]);
 
+
+
 try {
+
     $route = $router->matchFromPath($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
     $params = $route->getParams();
     $args = $route->getVars();
@@ -29,6 +33,7 @@ try {
     echo $controller(...array_values($args));
 }catch (Exception $exception){
     header("HTTP/1.0 404 Not Found");
+    //echo "HTTP/1.0 404 Not Found";
 }
 
 //phpinfo();
