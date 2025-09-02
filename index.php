@@ -12,7 +12,7 @@ Dotenv::dotEnv();
 //$router = new Router();
 
 $router = new Router([
-    new Route('test_page', '/test_page', [TestPagePublicController::class]),
+    new Route('test_page_new', '/test_page_new', [TestPagePublicController::class]),
 ]);
 
 
