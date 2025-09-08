@@ -3,7 +3,7 @@ require_once "core/composer/vendor/autoload.php";
 
 use Core\Libs\DotEnv;
 use Core\Routing_v2\RouteAction;
-use Core\Routing_v3_finish\Route;
+use Core\Routing_v3_finish\Router;
 
 //use Core\Routing\Router;
 
@@ -21,6 +21,6 @@ $routeAction->init();
 /**
  * for Routing_v3_finish
  */
-$route = new Route();
+$route = new Router();
 
 //phpinfo();
