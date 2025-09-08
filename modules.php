@@ -5,10 +5,13 @@ use Core\PagePublic\PagePublicController;
 use Lk\Controller\PageLkController;
 
 return [
-    'controllers' => [
+    'section_controllers' => [
         PagePublicController::class,
         PageAdminController::class,
         PageLkController::class,
+    ],
+    'page_controllers' => [
+        
     ],
     'repository' => [
 
