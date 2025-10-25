@@ -6,7 +6,7 @@ use Core\BaseController;
 
 class PageAdminController extends BaseController
 {
-    public function init()
+    public function index()
     {
         echo '<br>'."Класс: ".__CLASS__;
     }
