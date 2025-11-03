@@ -1,18 +1,19 @@
 <?php
 require_once "core/composer/vendor/autoload.php";
 
-use Core\Config;
 use Core\Libs\DotEnv;
-//use Core\Routing_v2\RouteAction;
+use Core\Routing_v3_finish\RouteUtils;
 use Core\Routing_v3_finish\RouteAction;
 
+//use Core\Routing_v2\RouteAction;
 
-//use Core\Routing\Router;
+
+//use Core\RoutingFromURL\Router;
 
 Dotenv::dotEnv();
 
 /**
- * for Routing
+ * for RoutingFromURL
  */
 //$router = new Router();
 
@@ -25,7 +26,7 @@ Dotenv::dotEnv();
 /**
  * for Routing_v3_finish
  */
-$routeAction = new RouteAction(new Config());
+$routeAction = new RouteAction(new RouteUtils());
 $routeAction->init();
 
 //phpinfo();
