@@ -1,5 +1,7 @@
 /.idea
 /.vscode
 Error htaccess
-.env
-.env.dev
+env/.env
+env/.env.dev
+env/.env.test_server
+env/.env.test_server.dev
