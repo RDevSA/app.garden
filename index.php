@@ -1,13 +1,14 @@
 <?php
 require_once "core/composer/vendor/autoload.php";
 
-use Core\Routing_v3_finish\RouteUtils;
+
 use Core\Routing_v3_finish\RouteAction;
+use Core\Routing_v3_finish\RouteUtils;
 
 /**
- * for RoutingFromURL
+ * for ParseURL
  */
-//$router = new Router();
+//$router = new ParseHost();
 
 /**
  * for Routing_v2
